@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portofolio Nandos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <style>
+            .content{
+                grid-area: content;
+            }
+            .sidebar{
+                 grid-area: sidebar;
+                background-color: #6D8B74;
+                justify-content: center;
+            }
+            .container {
+                font-size: 1.5em;
+                width: 100%;
+                height: 100;
+                height: 100vh;
+                display: grid;
+                grid-template-areas: "sidebar" "content" "footer";
+                grid-template-columns: 1fr;
+                grid-template-rows: 130px 800px 100px;
+            }
+            .content, .sidebar, .footer{
+                padding: 1em;
+            }
+            nav ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+            nav li{
+                list-style: none;
+                padding: 1em 0;
+            }
+            nav li a {
+                color: white;
+                font-weight: 700;
+                opacity: 1;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            nav li a:hover{
+                color:lightgray;
+            }
+            .hero {
+                max-width: 90 px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .hero img {
+                width: 200px;
+                float: left;
+                margin-right: 17px;
+            }
+            .hero h1 {
+            font-size: 2em;
+            font-weight: 300;
+            color: #373046;
+            font-family: 'Poppins', sans-serif;
+            }
+            .hero p {
+                font-family: 'Quicksand', sans-serif;
+                text-align:left;
+                font-size: 21px;
+                
+            }
+            .bagian{
+                font-family: 'Quicksand', sans-serif;
+            }
+            .wrapper{
+                margin: auto;
+                display: flex;
+                justify-content: center;
+            }
+            .box {
+                width: 500px;
+                height: 275px;
+                margin: 30px 30px ;
+                display: inline-block;
+                float: none;
+
+            }
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            .cover {
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/Database%20Website/Biodata.html">About</a></li>
+                        <li><a href="http://127.0.0.1:5500/Database%20Website/Playlist.html">Playlist</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="https://wa.me/6281326260376">Contact</a></li>   
+                    </ul>
+                </nav>
+            </div>
+            <main class="content">
+                <section class="hero">
+                    <img src="Foto.jpg" alt="">
+                <div class="hero-content">
+                    <h1>Who The Hell am i</h1>   
+                    <p> Halo kenalin nama gw Fernanda Irgie Saputra bisa dipanggil Nanda.Asal sekolah gw di SMKN 6 SURAKARTA,tau lah ya deket Pertamina.Gw hobi foto foto (bukan foto selfie ye),main game,ama ngedit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
+                <br>
+                </div>
+                  </section>
+                <section class="bagian">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam
+                        dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus
+                        ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus
+                        laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum,
+                        tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus
+                        neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat
+                        volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros
+                        pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec
+                        lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
+                        <br><br>
+                </section>
+                <div class="wrapper">
+                    <div class="box"><img src="mumut 1.jpg" alt="mumut" class="cover"></div>
+                    <div class="box"><img src="Kue.jpg" alt="Kue" class="cover"></div>
+                    <div class="box"><img src="Fotbar.jpg" alt="Fotbar" class="cover"></div>
+                </div>
+                <br>
+                <div class="wrapper">
+                    <div class="box"><img src="Juan.jpg" alt="juan" class="cover"></div>
+                    <div class="box"><img src="mumut 2.jpg" alt="mumut 2" class="cover"></div>
+                    <div class="box"><img src="Pew pew.jpg" alt="pew pew" class="cover"></div>
+                </div>
+          </div>
+    </body>
+</html>
